@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import { FindMovie }from './components/findMovie/FindMovie.jsx';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="search__block">
+        <h3 className="search__text fade-in">
+          Find a movie
+        </h3>
+        <FindMovie />
+      </div>
+    </>
   );
 }
 
